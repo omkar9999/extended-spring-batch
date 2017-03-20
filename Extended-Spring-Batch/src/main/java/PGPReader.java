@@ -1,5 +1,3 @@
-package com.kohls.hr.ob.batch.itemreader;
-
 import org.springframework.batch.item.file.FlatFileItemReader;
 import org.springframework.beans.factory.InitializingBean;
 
