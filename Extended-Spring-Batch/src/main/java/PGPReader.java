@@ -16,6 +16,7 @@ public class PGPReader extends FlatFileItemReader<Object> implements Initializin
 	private String passphrase2;       //Can be null if isCompressed is false
 	
 	public PGPReader() {
+		SecurityUtil.loadSecuritySetting();
 		// TODO Check if isCompressed is true, then generate intermediate file & change/override the input resource
 	}
 	
