@@ -7,4 +7,6 @@ notifications:
 jdk:
 - oraclejdk8
 
+before_script: cd Extended-Spring-Batch
+
 script: mvn clean assemble
