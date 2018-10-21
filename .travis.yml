@@ -7,6 +7,12 @@ notifications:
 jdk:
 - oraclejdk8
 
+addons:
+  sonarcloud:
+    organization: "omkar9999-github"
+
 before_script: cd Extended-Spring-Batch
 
-script: mvn clean package
+script: 
+mvn clean package
+mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
