@@ -8,6 +8,11 @@ notifications:
 jdk:
 - oraclejdk8
 
+cache:
+  directories:
+  - .autoconf
+  - $HOME/.m2
+
 addons:
   sonarcloud:
     organization: "omkar9999-github"
