@@ -1,3 +1,8 @@
 language: java
 sudo: false
-script: mvn clean assemble
+
+notifications:
+  email: false
+
+jdk:
+- oraclejdk8
